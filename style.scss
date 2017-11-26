@@ -1,0 +1,68 @@
+/*Example Reset*/
+#example-wrapper{
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* List Item Styles */
+$list-item-margin: 0.75em;
+
+/* Button Styles */
+$accordion-button-bgcolor: rgba(255,255,255,1);
+$accordion-button-txtcolor: rgba(0,0,0,1);
+$accordion-button-border-width: 1px;
+$accordion-button-border-style: solid;
+$accordion-button-border-color: rgba(0,0,0,1);
+$accordion-button-padding: 1em;
+$accordion-button-font-family: 'Helvetica', Arial, sans-serif;
+$accordion-button-font-size: 1em;
+
+/*Content Div Styles*/
+$accordion-content-font-family: 'Helvetica', Arial, sans-serif;
+$accordion-content-font-size: 1em;
+
+#accordion{
+  
+  ul, .accordion-controls{
+    /*Base*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li{
+      /*Vars*/
+      margin-bottom: $list-item-margin;
+      
+      button{
+        /*Base*/
+        width: 100%;
+        text-align: left;
+        
+        /*Vars*/
+        border-color: $accordion-button-border-color;
+        border-style: $accordion-button-border-style;
+        border-width: $accordion-button-border-width;
+        background-color: $accordion-button-bgcolor;
+        color: $accordion-button-txtcolor;
+        padding: $accordion-button-padding;
+        font-family: $accordion-button-font-family;
+        font-size: $accordion-button-font-size;
+      }
+      
+      div{
+        /*Base*/
+        display: none;
+        
+        /*Vars*/
+        font-family: $accordion-content-font-family;
+        font-size: $accordion-content-font-size;
+      }
+      
+    }
+    
+  }
+  
+  
+  
+}
